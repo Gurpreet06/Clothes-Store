@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../JavaScript/index-mobile-menu.js"></script>
+    <script src="../JavaScript/index-slide-cart.js"></script>
+    <script src="../JavaScript/Shadow-Menu.js"></script>
+
+    <title>About-Us</title>
+</head>
+
+<body class="body-about-us">
+ 
+    <menu-menu></menu-menu>
+
+    <!--Where we are-->
+    <div id="container">
+        <a href="../index.html" class="container-a1">Home /</a>
+        <a href="#" class="container-a2">Our story</a>
+    </div>
+    <!--END OF Where we are-->
+
+    <!--About-Us-->
+    <div id="center-pro-outer">
+        <div>
+            <img src="./commas.PNG">
+        </div>
+        <div>
+            <p id="pro-p-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ratione, beatae
+                accusamus, quisquam consequatur cupiditate similique distinctio odit animi accusantium suscipit rerum at
+                voluptatem! Nobis fugit aut aspernatur magni aperiam?.</p>
+            <div id="pro-blueline-about"></div>
+            <h2 id="pro-h2-about">Gurpreet Singh</h2>
+            <p id="pro-p2-about">Manager Of Shop</p>
+        </div>
+    </div>
+    <!--End of About-Us-->
+
+    <!--FOOTER-->
+    <menu-footer></menu-footer>
+    <!--END OF FOOTER-->
+</body>
+
+<style>
+    #center-pro-outer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 53%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    #pro-p-about {
+        font-size: 16px;
+        line-height: 1.75rem;
+        color: grey;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pro-blueline-about {
+        border-bottom: 4px solid #667eea;
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #pro-h2-about {
+        letter-spacing: .05em;
+        font-size: 0.975rem;
+        font-weight: 600;
+        margin-bottom: -5px;
+    }
+
+    #pro-p2-about {
+        font-size: 15px;
+        font-weight: 500;
+        color: gray;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        #center-pro-outer {
+            width: 100%;
+            margin-top: 2px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .about-hideen-menu {
+            font-size: 24px;
+        }
+
+        .emailbtn-about-us {
+            font-size: 13px;
+        }
+
+        .bottomfooter-about-us {
+            max-width: 311px;
+        }
+
+        .line1-about-us {
+            max-width: 275px;
+        }
+    }
+</style>
+
+</html>

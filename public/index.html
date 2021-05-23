@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    <!---------------CSS----------------->
+    <link rel="stylesheet" href="./index.css">
+    <!---------------JAVASCRIPT----------------->
+    <script src="./JSON/Json.js"></script>
+    <script src="./JSON/Products.js"></script>
+    <script src="./JavaScript/Shadow-Menu.js"></script>
+    <script src="./JavaScript/index-mobile-menu.js"></script>
+
+    <title>Clothes Store</title>
+</head>
+<!----Templates---->
+
+<!--recomenades-->
+<template id="plantilla">
+    <div>
+        <img src="{{imatge}}">
+    </div>
+    <div>
+        <div><b>{{nom}}</b></div>
+        <p>{{descipcion}}</p>
+        <a class="cardtxt">Learn More</a>
+    </div>
+</template>
+<!--END OF recomenades-->
+
+<!--Featured Products-->
+<template id="templates">
+    <div class="proall">
+        <img src="{{imatge}}" class="proimg">
+        <div class="mobilepro">
+            <a href="{{link}}" class="proahre">
+                <h2 class="proh2">{{name}}</h2>
+            </a>
+            <p class="prop">{{price}}</p>
+        </div>
+    </div>
+</template>
+<!--END OF Featured Products-->
+
+<!--Latest Products-->
+<template id="newProducts">
+    <div class="proall">
+        <img src="{{imatge}}" class="proimg">
+        <div class="mobilepro">
+            <a href="{{link}}" class="proahre">
+                <h2 class="proh2">{{names}}</h2>
+            </a>
+            <p class="prop">{{prices}}</p>
+        </div>
+    </div>
+</template>
+<!--END OF Latest Products-->
+
+<!----END OF Templates---->
+
+
+<body class="body" onload="init()">
+    <menu-menu></menu-menu>
+
+    <!--New Product-->
+    <div class="cardsh1">
+        <h2 style="font-size: 35px;">New Arrivals</h2>
+    </div>
+    <div id="cartas"></div>
+    <!--End of New Product-->
+
+    <!---foto-product------>
+    <div id="foto-product">
+        <img src="./Image/PRODUCT/category-1.jpg" height="380px" class="foto-product-mobile">
+        <img src="./Image/PRODUCT/category-2.jpg" height="380px" id="foto-product-img2" class="foto-product-mobile">
+        <img src="./Image/PRODUCT/category-3.jpg" height="380px" class="foto-product-mobile">
+    </div>
+    <!---End of foto-product------>
+
+    <!---CNT1-->
+    <div class="cardsh1">
+        <h2 style="margin-top: 55px; margin-bottom: -9px;">Featured Products</h2>
+        <div class="line-Bottom"></div>
+    </div>
+    <section class="prosec">
+        <div class="mobileprosec">
+            <div class="flec" id="fetured"></div>
+        </div>
+    </section>
+    <!---End of CNT1-->
+
+    <!---Latest Protduct-->
+    <div class="cardsh1">
+        <h2 style="margin-top: 7px;margin-bottom: -9px;">Latest Products</h2>
+        <div class="line-Bottom"></div>
+    </div>
+    <section class="prosec">
+        <div class="mobileprosec">
+            <div class="flec" id="latestProducts"></div>
+        </div>
+    </section>
+    <!---END OF Latest Protduct-->
+
+    <!--FOOTER-->
+    <menu-footer></menu-footer>
+    <!--END OF FOOTER-->
+</body>
+
+</html>

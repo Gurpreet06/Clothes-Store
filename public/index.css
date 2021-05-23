@@ -1,0 +1,219 @@
+body{
+    font-family: 'Roboto';
+    margin: auto;
+}
+
+/**WHERE WE AARE*/
+#container{
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6;
+    padding: 50px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.container-a1{
+    color: #707070;
+    text-decoration: none;
+}
+.container-a2{
+    color: #e33;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+/* Items */
+.proahre{
+    text-decoration: none;
+}
+.proahre:visited{
+    color: black;
+}
+
+.btn{
+    padding: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(#AA87E3, #9172DA );
+    border: 1px solid #AA87E3;
+    color: white;
+    border-radius: 11px;
+}
+.prosec{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.flec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.proall{
+    width: 25%;
+}
+.proimg{
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 14px;
+    transition: transform 0.5s;
+}
+.proimg:hover{
+   transform: translateY(-15px);
+}
+.proh2{
+    color: #555;
+    margin-top: 19px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.proh2:hover{
+    color: #AA87E3;
+}
+.prop{
+    font-size: 16px;
+    margin-top: -5px
+}
+/**End of CNT1*/
+
+/**NEWARRIVALS**/
+.cardsh1{
+    user-select: none;
+    text-align: center;
+    color: #555;
+    line-height: 65px;
+    font-weight: bold;
+}
+.line-Bottom{
+    border: 4px solid #ff523b;
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#cartas{
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1250px;
+    margin: auto;
+    background-color: whitesmoke;
+    justify-content: center;
+    border-radius: 14px;
+}
+#cartas > div {
+    padding: 20px;
+    margin-bottom: 33px;
+    width: 430px;
+}
+#cartas > div:nth-child(2) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cartas > div img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    width: 100%;
+    background: lightgray;
+}
+#cartas > div b {
+    font-size: 25px;
+}
+#cartas > div p {
+    margin-top: 16px;
+    font-size: 20px;
+}
+.cardtxt{
+    padding: 0 10px;
+    color: #ffffff;
+    line-height: 24px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 26%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/**End pof new Arrivals**/
+
+
+/* foto-product */
+#foto-product{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#foto-product-img2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* End of foto-product */
+@media only screen and (max-width: 1024px){
+    #foto-product{
+        flex-wrap: wrap;
+    }
+    .foto-product-mobile{
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .borderline {
+        border-bottom: 0px solid black;
+    }
+    #cartas{
+        justify-content: center;
+        max-width: 510px;
+    }
+    #container {
+        font-size: 22px;
+    } 
+    #foto-product{
+        flex-wrap: wrap;
+    }
+    #foto-product-img2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .foto-product-mobile {
+        padding: 1px;
+        height: 290px;
+        align-self: center;
+    }
+    .line-Bottom{
+        width: 35%;
+    }
+    .flec{
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+    }
+    .prosec{
+        background: white;
+    }
+    .proall {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .mobileprosec{
+        display: flex;
+        justify-content: center;
+    }
+    .proimg {
+        width: 100%;
+    }
+    .mobilepro{
+        margin-left: 28px;
+    }
+}

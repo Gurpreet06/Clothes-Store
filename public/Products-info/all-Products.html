@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!---------------CSS----------------->
+    <link rel="stylesheet" href="../index.css">
+    <!---------------JAVASCRIPT----------------->
+
+    <script src="../JSON/Products.js" defer></script>
+    <script src="../JavaScript/index-mobile-menu.js"></script>
+    <script src="../JavaScript/Shadow-Menu.js"></script>
+
+    <title>Clothes Stores</title>
+</head>
+
+<!----Templates---->
+
+<!--Featured Products-->
+<template id="templates">
+    <div class="proall">
+        <img src="{{imatge}}" class="proimg">
+        <div class="mobilepro">
+            <a href="{{link}}" class="proahre">
+                <h2 class="proh2">{{name}}</h2>
+            </a>
+        </div>
+    </div>
+</template>
+<!--END OF Featured Products-->
+
+<!--Latest Products-->
+<template id="newProducts">
+    <div class="proall">
+        <img src="{{imatge}}" class="proimg">
+        <div class="mobilepro">
+            <a href="{{link}}" class="proahre">
+                <h2 class="proh2">{{names}}</h2>
+            </a>
+        </div>
+    </div>
+</template>
+<!--END OF Latest Products-->
+
+<!----END OF Templates---->
+
+<body class="body" onload="init()">
+
+    <menu-menu></menu-menu>
+
+    <!--Where we are-->
+    <div id="container">
+        <a href="../index.html" class="container-a1">Home /</a>
+        <a href="#" class="container-a2">All Products</a>
+    </div>
+    <!--END OF Where we are-->
+
+    <div class="cardsh1">
+        <h2 class="card-sh-h2">All Products</h2>
+        <select class="card-select-option">
+            <option value="Default Shorting">Default Shorting</option>
+            <option value="Short by price">Short by price</option>
+            <option value="Short by rating">Short by rating</option>
+            <option value="Short by sale">short by sale</option>
+        </select>
+    </div>
+
+    <!---CNT1-->
+    <section class="prosec">
+        <div class="mobileprosec">
+            <div class="flec" id="fetured"></div>
+        </div>
+    </section>
+    <!---End of CNT1-->
+
+    <!---Latest Protduct-->
+    <section class="prosec">
+        <div class="mobileprosec">
+            <div class="flec" id="latestProducts"></div>
+        </div>
+    </section>
+    <!---END OF Latest Protduct-->
+
+
+    <!--FOOTER-->
+    <menu-footer></menu-footer>
+    <!--END OF FOOTER-->
+</body>
+
+<style>
+    .prosec {
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+    }
+
+    .cardsh1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        color: black;
+        margin-top: 40px;
+    }
+
+    .card-select-option {
+        height: 100%;
+        padding: 4px;
+        border: 1px solid #ff523b;
+        cursor: pointer;
+    }
+
+    #row-2 {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .card-sh-h2 {
+        margin-right: 195px;
+        margin-bottom: -9px;
+    }
+
+    @media only screen and (max-device-width: 730px) {
+        .card-sh-h2 {
+            margin-right: 0;
+        }
+
+        #row-2 {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
+<script>
+    function init() {
+        let reftemplates = document.getElementById('templates')
+        let reffetured = document.getElementById('fetured')
+        let htmls = ''
+
+        for (cnt = 0; cnt < feturedProducts.length; cnt = cnt + 1) {
+            htmls = htmls + reftemplates.innerHTML
+                .replace(/{{name}}/g, feturedProducts[cnt].name)
+                .replace(/{{imatge}}/g, feturedProducts[cnt].imatge)
+                .replace(/{{link}}/g, `Product.html?id=${latestProducts[cnt].id}`)
+        }
+        reffetured.innerHTML = htmls
+
+        let reftemplate = document.getElementById('newProducts')
+        let refLatest = document.getElementById('latestProducts')
+        let template = ''
+
+        for (cnt = 0; cnt < latestProducts.length; cnt = cnt + 1) {
+            template = template + reftemplate.innerHTML
+                .replace(/{{names}}/g, latestProducts[cnt].name)
+                .replace(/{{imatge}}/g, latestProducts[cnt].imatge)
+                .replace(/{{link}}/g, `Product.html?id=${latestProducts[cnt].id}`)
+        }
+        refLatest.innerHTML = template
+    }
+</script>
+
+</html>

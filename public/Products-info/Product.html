@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <!----------------CSS------->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./product-index.css">
+    <!--------JAVASCRIPT--------------->
+    <script src="../index-mobile-menu.js"></script>
+    <script src="../JavaScript/Shadow-Menu.js"></script>
+    <script src="./product.js" defer></script>
+    <script src="../JSON/allProducts.js" defer></script>
+    <title>Product</title>
+</head>
+
+<body class="body-1">
+
+    <menu-menu></menu-menu>
+    <!--Where we are-->
+    <div id="container">
+        <a href="../index.html" class="container-a1">Home /</a>
+        <a href="#" class="container-a2">Product Info</a>
+    </div>
+    <!--END OF Where we are-->
+
+    <!--Product info-->
+
+    <div id="outer">
+        <div id="pr-oimg">
+            <img src="{{Image}}" id="item-img" width="85%">
+        </div>
+        <form id="libraryForm">
+            <div id="inner">
+                <h3 id="servicesType">Shirts</h3>
+                <h2 id="item-name"></h2>
+                <h5 id="item-price"></h5>
+                <p id="servicesDesciption">{{d}}</p>
+                <div id="inner-1">
+                    <div>Size:</div>
+                    <select id="options">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn1" id="addToCart">Add To Cart</button>
+                    <input type="button" value="Buy it Now" class="btn1">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--END OF Product info-->
+    <!--FOOTER-->
+    <menu-footer></menu-footer>
+    <!--END OF FOOTER-->
+
+</body>
+
+<script>
+    let servicesName = document.getElementById('item-name')
+    let servicesDesciption = document.getElementById('servicesDesciption')
+    let ServicesImg = document.getElementById('item-img')
+    let ServicePrice = document.getElementById('item-price')
+    let ServicesType = document.getElementById('servicesType')
+
+    let posId = document.URL.indexOf('id=')
+    let urlIdNum = document.URL.substring(posId + 3)
+    let numServices = urlIdNum - 1
+
+    window.addEventListener('load', () => {
+        loadServices(numServices)
+    })
+
+    function loadServices(numSer) {
+        servicesName.innerText = ourServices[numSer].name
+        servicesDesciption.innerText = ourServices[numSer].description
+        ServicesImg.src = ourServices[numSer].imatge
+        ServicesType.innerText = ourServices[numSer].type
+        ServicePrice.innerText = ourServices[numSer].price
+    }
+</script>
+
+</html>

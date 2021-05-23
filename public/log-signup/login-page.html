@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!---CSS--->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../index.css">
+    <!--------JAVASCRIPT--------------->
+    <script src="./login.js" defer></script>
+    <script src="./md5.js" defer></script>
+    <script src="../JavaScript/index-mobile-menu.js"></script>
+    <script src="../JavaScript/Shadow-Menu.js"></script>
+    <script src="../JavaScript/UserRegistracion.js" defer></script>
+
+    <title>Login</title>
+</head>
+
+<body>
+    <menu-menu></menu-menu>
+    <div class="wrapper">
+        <div class="side-info">
+            <div class="info">
+                <i class="fas fa-check-circle"></i>
+                <span>Enjoy every moment with us</span>
+                <p>Preview your newsletters on any device before sending them out.</p>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-check-circle"></i>
+                <span>Chat with anyone you want</span>
+                <p>By using our app you can chat with anyone you want</p>
+            </div>
+        </div>
+        <section class="form signup">
+            <header>Login With Your Account</header>
+            <form action="#" autocomplete="off">
+                <div class="error-text"></div>
+                <div class="field input">
+                    <label>Email Address</label>
+                    <input type="text" id="formMail" placeholder="Enter your email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onkeyup="checkForm()">
+                    <div>Please enter a valid email address</div>
+                  </div>
+                  <div class="field input">
+                    <label>Password</label>
+                    <input type="password" id="formPassword" placeholder="Enter new password" onkeyup="checkForm()">
+                  </div>
+                <div class="field button" id="boxButton">
+                    <input type="submit" id="formButton" onclick="queryLogIn(event)" disabled="true" name="submit"
+                      value="Log In">
+                  </div>
+                  <div id="boxSpinner" class="defDiv elmBoxSpinner">
+                    <!-- Div - boxSpinner -->
+                    <div class="defDivFlex elm71">
+                      <!-- Flex -->
+                      <div class="defDivFlexChild">
+                        <!-- Flex child -->
+                        <div class="defDiv elm73">
+                          <!-- Div -->
+                          <div class="waitSpinner">
+                            <!-- Wait spinner -->
+                            <svg viewBox="0 0 50 50">
+                              <!-- Spinner main -->
+                              <circle cx="25" cy="25" r="20" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="boxOk" class="defDiv elmBoxOk" style="display: none;">
+                    <!-- Div - boxOk -->
+                    <div class="defDivFlex elm78">
+                      <!-- Flex -->
+                      <div class="defDivFlexChild">
+                        <!-- Flex child -->
+                        <div class="defText elm80">
+                          <!-- Text -->
+                          Data sent properly
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="boxError" class="defDiv elmBoxError">
+                    <!-- Div - boxError -->
+                    <div class="defDivFlex elm82">
+                      <!-- Flex -->
+                      <div class="defDivFlexChild">
+                        <!-- Flex child -->
+                        <div class="defText elm84">
+                          <!-- Text -->
+                          Incorrect Email or Password!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>
+            <div class="link">Don't Have An Account Create Now! <a href="./signup-page.html">Sign Up</a></div>
+        </section>
+    </div>
+
+
+    <!--FOOTER-->
+    <menu-footer></menu-footer>
+    <!--END OF FOOTER-->
+
+</body>
+
+</html>
