@@ -17,23 +17,5 @@
     "contrasenya": "5345b8944f05b0ad3eb7a5a519d4bd83",
     "image": "/images/usrProfilePhoto/userDefault.png",
     "id": 433777573955046
-  },
-  {
-    "type": "SaveUserData",
-    "nom": "Admin",
-    "cognom": "Master",
-    "mail": "admin@m.com",
-    "contrasenya": "751cb3f4aa17c36186f4856c8982bf27",
-    "image": "images/usrProfilePhoto/wolf.jpeg",
-    "id": 553453561063671
-  },
-  {
-    "type": "SaveUserData",
-    "nom": "sdfsd",
-    "cognom": "sdfs",
-    "mail": "dfsdfds@hgf.sgf",
-    "contrasenya": "5345b8944f05b0ad3eb7a5a519d4bd83",
-    "image": "images/usrProfilePhoto/Fondo.png",
-    "id": 402832164916664
   }
 ]
