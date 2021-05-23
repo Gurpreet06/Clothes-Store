@@ -23,7 +23,7 @@ npm start
 
 ## Captures
 
-Elements and configs
+Templates
 
 ![Photos](public/Image/fotos/Preview0.JPG)
 
