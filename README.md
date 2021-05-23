@@ -8,6 +8,9 @@ Do not use this software for commercial purposes
 
 If you're using this software to directly, or indirectly, make money; then you're using the software for a commercial purpose, and the creator wants a licensing fee to get paid for the coding work in producing the software.
 
+# Images
+Images we are seeing on this web page are downloaded from `https://thedailyshirts.com/products/baby-yoda-in-a-box-adopt-this-baby-jedi-shirts/`
+
 ### Install node dependencies
 
 ```
