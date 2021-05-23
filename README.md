@@ -6,8 +6,6 @@ Clothes Store is a web application built with Html, css, JavaScript and Nodejs t
 
 Do not use this software for commercial purposes
 
-If you're using this software to directly, or indirectly, make money; then you're using the software for a commercial purpose, and the creator wants a licensing fee to get paid for the coding work in producing the software.
-
 # Images
 Images we are seeing on this web page are downloaded from 
 
