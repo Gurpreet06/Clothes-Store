@@ -25,9 +25,9 @@ npm start
 
 Elements and configs
 
-![Elements](public/Image/fotos/Preview0.jpg)
+![Elements](public/Image/fotos/Preview0.JPG)
 
 Templates
 
-![Templates](public/Image/fotos/Preview1.jpg)
+![Templates](public/Image/fotos/Preview1.JPG)
 
