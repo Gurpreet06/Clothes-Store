@@ -25,9 +25,9 @@ npm start
 
 Templates
 
-![Photos](public/Image/fotos/Preview0.JPG)
+![Photos](public/Image/Preview0.JPG)
 
 Templates
 
-![Photos](public/Image/fotos/Preview1.JPG)
+![Photos](public/Image/Preview1.JPG)
 
