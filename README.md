@@ -26,11 +26,11 @@ npm start
 
 ## Captures
 
-Templates
+Home Page
 
 ![Photos](public/Image/Preview0.JPG)
 
-Templates
+Products Page
 
 ![Photos](public/Image/Preview1.JPG)
 
