@@ -4,7 +4,7 @@ Clothes Store is a web application built with Html, css, JavaScript and Nodejs t
 
 # Important!
 
-Do not use this software for commercial purposes
+Do not use this web application for commercial purposes
 
 # Images
 Images we are seeing on this web page are downloaded from 
