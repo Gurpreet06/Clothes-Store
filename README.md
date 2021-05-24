@@ -1,6 +1,6 @@
 ## Clothes Store
 
-Clothes Store is a web application built with Html, css, JavaScript and Nodejs that allows customers to view productes like an online clothe shop and also to add products in thier carts, this web application is also mobile friendly.
+Clothes Store is a web application built with Html, css, JavaScript and Nodejs that allows customers to view products like online cloth shops and also to add products in their carts, this web application is also compatible with mobile phones.
 
 # Important!
 
