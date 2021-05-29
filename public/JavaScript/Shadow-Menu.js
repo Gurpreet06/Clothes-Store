@@ -263,13 +263,7 @@ class MenuInput extends HTMLElement {
 
         //Create a script tag to add Slide Menu JS
         this.shadow.querySelector('#menuSmall').addEventListener('click', (evt) => { this.amagaMenu(evt) })
-        let usrLogInd = this.shadow.querySelector('#usrLogInd')
 
-        if (localStorage.getItem('usrTokenId') == null) {
-            usrLogInd.innerHTML = '<a href="../log-signup/login-page.html">Your Account</a>'
-        } else {
-            usrLogInd.innerHTML = '<a href="../usr/userDetail.html">Your Account</a>'
-        }
     }
 
     async mostrar() {
@@ -379,10 +373,10 @@ let footerInputHTML = `
 <div class="col">
     <h5>Follow us on Social Media</h5>
     <ul class="social-media">
-        <li><a target="_blank" href=""><img src="./Image/Social-Media/facebook.png"></a></li>
-        <li class="social-center"><a target="_blank" href=""><img src="./Image/Social-Media/twitter.png"></a>
+        <li><a href=""><img src="../Image/Social-Media/facebook.png"></a></li>
+        <li class="social-center"><a href=""><img src="../Image/Social-Media/twitter.png"></a>
         </li>
-        <li><a target="_blank" href=""><img src="./Image/Social-Media/Instagram.png"></a></li>
+        <li><a href=""><img src="../Image/Social-Media/Instagram.png"></a></li>
     </ul>
 </div>
 </div>
