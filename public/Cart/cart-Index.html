@@ -21,16 +21,12 @@
 
     <menu-menu></menu-menu>
 
-
-
     <!--Where we are-->
     <div id="container">
         <a href="../index.html" class="container-a1">Home /</a>
         <a href="#" class="container-a2">Cart</a>
     </div>
     <!--END OF Where we are-->
-
-
 
     <div class="wrapper">
         <div>
@@ -46,7 +42,7 @@
             <table>
                 <tr>
                     <td class="firsttd">Subtotal</td>
-                    <td class="firsttd">200.80€</td>
+                    <td class="firsttd" id="subTotl">200.80€</td>
                 </tr>
                 <tr>
                     <td class="firsttd">Delivery Fee</td>
@@ -54,7 +50,7 @@
                 </tr>
                 <tr>
                     <td class="lasttd">Total (Incl. VAT)</td>
-                    <td class="lasttd">200.80€</td>
+                    <td class="lasttd" id="lasttd">200.80€</td>
                 </tr>
             </table>
         </div>
@@ -99,6 +95,7 @@
         border-bottom: 1px solid #e6e6e6;
         text-align: center;
         padding: 20px;
+        user-select: none;
     }
 
     #allEle {
@@ -125,12 +122,14 @@
     .eleh2 {
         color: #555;
         cursor: pointer;
+        user-select: none;
     }
 
     .elep {
         color: #555;
         margin-bottom: 10px;
         margin-top: 10px;
+        user-select: none;
     }
 
     .item {
@@ -139,6 +138,7 @@
     }
 
     .countItem {
+        user-select: none;
         padding: 10px;
         font-size: 18px;
         font-weight: 600;
@@ -151,6 +151,7 @@
 
     #Total-Price {
         display: flex;
+        user-select: none;
         justify-content: center;
     }
 
@@ -190,6 +191,13 @@
         border-radius: 5px;
         cursor: pointer;
         margin-top: 13px;
+    }
+
+    .origniaLPrice {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 </style>
 
