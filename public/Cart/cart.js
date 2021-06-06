@@ -106,3 +106,15 @@ async function restProduct(num, id, origPrice, totalPrice) {
         totlSb.innerHTML = parseFloat(element.innerText).toFixed(2) + '€'
     });
 }
+
+function checkPrice() {
+    let allEle = document.getElementById('allEle')
+    if (localStorage.getItem('Name') == '[]' && localStorage.getItem('Price') == '[]') {
+        allEle.innerHTML = `<p style='color: grey;font-size: 17px;padding: 25px;'>Please Add Some Products to cart.</p>`
+    }
+}
+
+
+setInterval(() => {
+    checkPrice()
+}, 100);
