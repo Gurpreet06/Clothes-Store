@@ -92,8 +92,11 @@ async function queryLogIn(evt) {
     await showElement('boxSpinner')
 
     await wait(1000)
-    fotobtn.style.display = 'block'
-    fotobtn.click()
+    if (refFormImage.value != '') {
+        fotobtn.style.display = 'block'
+        fotobtn.click()
+    }
+
     try {
         serverData = await queryServer('/query', obj)
     } catch (err) {
